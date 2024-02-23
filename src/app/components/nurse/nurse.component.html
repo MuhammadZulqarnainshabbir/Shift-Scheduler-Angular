@@ -1,0 +1,29 @@
+<form [formGroup]="myForm">
+  <mat-form-field>
+    <mat-label>Number of Nurses</mat-label>
+    <input matInput placeholder="Enter the number of Nurses" id="inputField" formControlName="numnurse" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="fillNurses()">
+    Generate Schedule
+  </button>
+</form>
+
+<div *ngIf="errorMessage" style="color: red; margin-top: 10px">
+  {{ errorMessage }}
+</div>
+
+<!-- Table -->
+
+<h2>Schedule</h2>
+
+<table style="width: 95%;">
+  <tr>
+    <th>Day</th>
+    <th *ngFor="let shift of shifts">{{ shift }}</th>
+  </tr>
+  <tr *ngFor="let day of daysOfWeek">
+    <td>{{ day }}</td>
+    <td *ngFor="let shift of shifts">{{ schedule[day][shift] }}</td>
+  </tr>
+</table>
