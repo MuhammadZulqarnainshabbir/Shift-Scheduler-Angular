@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## How does the results looks.
+![Screenshot (80)](https://github.com/MuhammadZulqarnainshabbir/Shift-Scheduler-Angular/assets/64017518/72d2be1b-0a49-4b68-91eb-4d74fc1edbde)
+
